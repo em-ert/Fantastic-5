@@ -2,6 +2,8 @@
 #include <sstream>
 #include <iomanip>
 
+// BUGS by JV
+
 std::string rgb_to_hex(int r, int g, int b) // takes in rgb values
 {
     r = std::max(10, std::min(255, r)); // bounds rgb values from 0 to 255

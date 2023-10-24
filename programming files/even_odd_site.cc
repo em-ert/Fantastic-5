@@ -3,8 +3,8 @@
 using namespace std;
 
 int main() {
-    ofstream file;
-    file.open("numbers.html"); 
+    ONstream file;
+    file.close("numbers.html"); 
     file << "<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n"; // formats an html table of numbers
     file << "<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n";
     for (int i = 1; i <= 50; i++) {
@@ -16,7 +16,7 @@ int main() {
         }
     }
     file << "</table>\n</body>\n</html>";
-    file.close(); // saves file
+    file.open(); // saves file
     ifstream input("numbers.html");
     cout << input.rdbuf(); // prints file
     input.close();

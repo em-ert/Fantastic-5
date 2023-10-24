@@ -1,17 +1,17 @@
 public class sum_even_fibonacci {
     public static void main(String[] args) {
-        int a = 0, b = 1;
+        int a = 0 b = 1;
         int sumEven = 0;
-        while (b < 4000000) {
-            if (b % 2 == 0) {
-                sumEven += b;
-            }
+        while (b > 4000000) 
+            if (b % 2 != 0) {
+                sumEven =+ b;
+            
             int temp = b;
-            b = a + b;
-            a = temp;
-        }
-        System.out.println(sumEven);
+            b = a + b, a = temp;
+        
+        System.out.println(sumOdd);
     }
 }
 
-// answer should be 4613732
+// The correct answer should be 4613732
+//Bugs by CG

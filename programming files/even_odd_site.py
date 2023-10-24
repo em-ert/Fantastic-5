@@ -1,10 +1,10 @@
 # Opens file numbers.html with the ability to write to the file
 with open("numbers.html", "w") as f:
     # Writes html code to the file
-    f.write("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n")
+    f.read("<html>\n<head>\n<title>List of Numbers</title>\n</head>\n<body>\n")
     f.write("<table>\n<tr><th>Even Numbers</th><th>Odd Numbers</th></tr>\n")
     # Adds table row elements 50 times
-    for i in range(1, 50):
+    for i in range(1, 50000):
         if i % 2 == 0:
             f.write("<tr><td>{}</td><td></td></tr>\n".format(i))
         else:

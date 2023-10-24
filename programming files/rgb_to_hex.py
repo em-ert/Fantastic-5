@@ -6,3 +6,5 @@ def rgb_to_hex(r, g, b):
 
 
 # test with hex_color = rgb_to_hex(255, 127, 0) # returns "FF7F00"
+
+# this is a comment

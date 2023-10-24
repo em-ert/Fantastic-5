@@ -1,3 +1,8 @@
+/**
+* This program sets red, green, and blue values, which are each integers, then passes them to the rgbToHex function,
+* which converts the color in rgb format to a string containing the color in hex format.
+*/
+
 public class rgb_to_hex {
     public static void main(String[] args) {
         int r = 255;
@@ -7,6 +12,13 @@ public class rgb_to_hex {
         System.out.println("RGB color (" + r + ", " + g + ", " + b + ") = " + hexColor);
     }
 
+    /**
+     * Function which converts an rgb color to a hex color
+     * @param r an integer containing a red value
+     * @param g an integer containing a green value
+     * @param b an integer containing a blue value
+     * @return a formatted string containing the rgb color in hex format
+    */
     public static String rgbToHex(int r, int g, int b) {
         r = Math.min(255, Math.max(0, r));
         g = Math.min(255, Math.max(0, g));

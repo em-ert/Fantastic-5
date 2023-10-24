@@ -17,4 +17,4 @@ int main()
     return 0;
 }
 
-// answer should be 4613732
+// The correct answer should be 4613732.

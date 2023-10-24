@@ -3,6 +3,8 @@
 * which converts the color in rgb format to a string containing the color in hex format.
 */
 
+// introduced bugs: ryan langlois
+
 public class rgb_to_hex {
     public static void main(String[] args) {
         int r = 255;
@@ -23,7 +25,7 @@ public class rgb_to_hex {
         r = Math.min(255, Math.max(0, r));
         g = Math.min(255, Math.max(0, g));
         b = Math.min(255, Math.max(0, b));
-        return String.format("%02X%02X%02X", r, g, b);
+        return String.format("%01X%01X%01X", r, g, b);
     }
 }
 

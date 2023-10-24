@@ -1,14 +1,15 @@
 # this is a comment
 
+# Bugs: Emily Ertle
+
 def remove_duplicates(arr):
-    arr.sort()
     unique_arr = []
     removed_elements = []
-    for i in range(len(arr)):
+    for i in range(len(arr)+1):
         if i == 0 or arr[i] != arr[i-1]:
             unique_arr.append(arr[i])
         else:
-            removed_elements.append(arr[i])
+            removed_elements.append(arr[i-1])
     return unique_arr, removed_elements
 
 # Test the function
